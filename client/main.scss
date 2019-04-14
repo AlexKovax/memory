@@ -1,0 +1,19 @@
+.container {
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@for $i from 0 through 17 {
+  .fruit-#{$i} {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url("/cards.png") 0 -100px * $i no-repeat;
+    display: inline-block;
+  }
+}
+
+.hidden {
+  background: black;
+}
